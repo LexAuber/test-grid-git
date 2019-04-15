@@ -2,63 +2,64 @@
   <html lang="es"> <!--Lang para declarar que idioma esta el documento-->
   <head>
     <title>Estructura HTML</title>
-    <link rel="stylesheet" href="Apuntes_CSS.css">
-    <meta charset="UTF-8"> <!-- Determina el Setup de los Characters en el documento, a UTF-8 Standar -->
-    <meta name="description" content="Exercicies of HTML, CSS, Javascript, with Images, Texts, Tags"> <!-- Descripcion de la pagina para Navegador y Buscadores SEO-->
-    <meta name="viewport" content="width-device-width, initial-scale=1.0"> <!-- Tag entero para Web Responsive -->
-    <meta name="keywords" content="HTML, CSS, Javascript, Images, Texts, Tags"><!-- Keywords son las palabras clave, seccion SEO del buscaodr -->
-    <meta name="author" content="Alexandre Montserrat Auber"><!-- Declaracion del autor -->
+      <link rel="stylesheet" href="Apuntes_CSS.css">
+      <meta charset="UTF-8"> <!-- Determina el Setup de los Characters en el documento, a UTF-8 Standar -->
+      <meta name="description" content="Exercicies of HTML, CSS, Javascript, with Images, Texts, Tags"> <!-- Descripcion de la pagina para Navegador y Buscadores SEO-->
+      <meta name="viewport" content="width-device-width, initial-scale=1.0"> <!-- Tag entero para Web Responsive -->
+      <meta name="keywords" content="HTML, CSS, Javascript, Images, Texts, Tags"><!-- Keywords son las palabras clave, seccion SEO del buscaodr -->
+      <meta name="author" content="Alexandre Montserrat Auber"><!-- Declaracion del autor -->
   </head>
   <body>
-    <h1>Estructura HTML, apuntes generales en HTML</h1> <h3 class="actu">(Se actualizan cada dia en classe)</h3> <!-- Apuntes, es posible que se repitan etiquetas, o explicaciones-->
-    <p><strong>HTML</strong>, HyperText Markup Lenguage, o en español, Lenguaje de Marcado de HyperTexto, forma el esqueleto de una pagina web, para ello existe el marcado de etiquetas, el cual existen las <strong>BLOCK</strong> e <strong>INLINE</strong>, que se diferencian en que las <strong>INLINE</strong>, aceptan otras etiquetas(Tags) dentro de las mismas. Las <strong>BLOCK</strong> se les tiene que forzar a tener etiquetas dentro de ellas mediante CSS a ser posible. </p><!-- Algo de HTML y Tipos de etiquetas -->
-    <h3>Titulos y Listas</h3>
-    <ul><!--Lista no ordenada-->
-      <li><p>Todas las etiquetas en minusculas</p></li>
-      
-      <ol> <!-- Lista ordenada-->
-          <li>Ejemeplo de H1 <h1>EJEMPLO</h1></li>
-          <li>Ejemeplo de H2 <h2>EJEMPLO</h2></li>
-          <li>Ejemeplo de H3 <h3>EJEMPLO</h3></li>
-          <li>Ejemeplo de H4 <h4>EJEMPLO</h4></li>
-          <li>Ejemeplo de H5 <h5>EJEMPLO</h5></li>
-          <li>Ejemeplo de H6 <h6>EJEMPLO</h6></li>
-      </ol>
-
-      <!-- Etiquetas varias, generales, utilidades, explicaciones, descripciones, etc... -->
-    <p>Todas las etiquetas empiezan con <strong>&lt;</strong> y acaban con <strong>/></strong>. Exceptuando algunas como Link o Meta por ejemplo, que no necesitan cierre, porque las mismas etiquetas son el contenido. Se pueden cerrar igualmente dentro de la misma con "/". En todo momento las etiquetas se escribiran en minuscula. Solo el contenido en ellas se puede escribir en mayuscula. En el Inicio del documento siempre tendremos que poner la siguiente linea de codigo:</p>
-    <p><strong>&lt:!DOCTYPE html></strong></p>
-    <p>Lo que realizamos en esta linea de codigo, es una declaracion del tipo de documento de html que vamos a usar, en este caso HTML5.</p>
-    <h2>Partes esenciales en la estructura de HTML:</h2>
-    <p><strong>HTML</strong> va a ser la primera de las etiquetas que vamos a poner, justo despues de la declaracion </p>
-    <p><strong>HEAD</strong>, es la cabecera del documento(parte invisible), se cierra siempre con />, se utiliza mas para la funcionalidad de la pagina, normalmente no se vera el contenido, ya que es solo para el navegador, pero si se desea se puede hacer visible. Tambien se utiliza para poder añadir CSS en la misma pagina, aunque normalmente se suele externalizar</p>
-          <ul>
-              <li> En Head se pondran varias etiquetas <strong>METAS</strong>, una para referirse al CHARacter SETup, que es el formato de codificacion de caracteres, basicamente para que no se ignoren los simbolos de pronunciacion, o de escritura, acentos, interrogantes, etc...  La forma en que se pone es esta: &lt;meta charset="UTF-8"></li>
-              <li> Otro de los elementos que se utiliza en <strong>HEAD</strong> junto a la etiqueta <strong>META</strong>, es el primer paso para la web responsive. Aunque esto normalmente lo hace CSS, ayuda al navegador que se utilize, a adaptar la pagina web al tipo de pantalla, y sus dimensiones, y que se vea bien al final. La linea de codigo es la siguiente: &lt;meta name="viewport" content="width-device-width, initial-scale=1.0"></li>
-              <li>Hay mas etiquetas y propiedades con <strong>META</strong> para ayudar a adaptar la pagina al buscador, o navegador, como por ejemplo, puede utilizarse para que tenga funcionalidad en Internet Explorer, que hoy en dia, se utiliza menos y el soporte del mismo esta retirado. Tambien serviran para otros navegadores, Firefox, Edge, Opera, Safari...etc</li>
-          </ul>
-      <li><p><strong>BODY</strong>, es el cuerpo del documento (parte visible), se cierra siempre con />, se utiliza mas para la parte visual de la pagina, ya sean, frases, tablas, u otras cosas de caracter informativo</p></li>
-      <h2>Elementos de HTML:</h2>
-      <li><p>Etiquetas como <strong>P</strong> o <strong>H1</strong>, sirven para Paragrafos o Titulos (de H1 a H6), se cierran siempre con />, seguir una etica con los titulos y paragrafos (Ambas Etiquetas son BLOCK)</p></li>
-      <li><p>Etiqueta <strong>LANG</strong>, declara el idioma en que se escribira en html, css o js, o otros frameworks</p></li>
-      <li><p>Etiquera <strong>CHARSET</strong> determina la utilizacion standar de codificacion de semantica o gramatica, o la codificacion de simbolos( ¿? - _ , . !¡^[]{}, etc...)</p></li>
-      <li><p>Etiquetas <strong>&lt;&#33;&#45;&#45;</strong> con <strong>&#45;&#45;&gt;</strong> se puede escribir comentarios utiles en la pagina de programacion</p></li>
-      <li><p>Etiquetas como <strong>EM</strong> sirven para enfatizar,la <i>I</i> sirve para poner de estilo italics, la <strong>STRONG</strong> sirve para enfatizar algo mucho mas importante y dar importancia semantica, la <b>B</b> o bolt, tiene la misma funcion que Strong pero sin importancia semantica</p></li>
-      <li><p>Etiquetas <strong>META</strong> sirve para añadir informacion extra de la pagina, tanto para el navegador como para el motor de busqueda (SEO)</p></li>
-      <li><p>Etiqueta <strong>LINK</strong>, es una vinculacion a un archivo de estilo CSS externo</p></li>
-      <li><p>Etiqueta <strong>SCRIPT</strong>, es una vinculacion a un archivo Javascript externo</p></li>
-      <li><p>Etiqueta <strong>BR</strong> o Brake, sirve para forzar un salto de linea</p></li>
-      <li><p>Etiqueta <strong>HR</strong> realiza un corte visual, para el diseño, es mejor CSS</p></li>
-      <li><p>Etiqueta <strong>UL</strong> o <strong>OL</strong>, sirven para crear listas, Unordened List, y Ordened List, dentro de ellas estan:</p></li>
+    <!-- Apuntes, es posible que se repitan etiquetas, o explicaciones-->
+    <h1>Estructura HTML, apuntes generales en HTML</h1> <h3 class="actu">(Se actualizan cada dia en classe)</h3>
+      <!-- Algo de HTML y Tipos de etiquetas -->
+      <p><strong>HTML</strong>, HyperText Markup Lenguage, o en español, Lenguaje de Marcado de HyperTexto, forma el esqueleto de una pagina web, para ello existe el marcado de etiquetas, el cual existen las <strong>BLOCK</strong> e <strong>INLINE</strong>, que se diferencian en que las <strong>INLINE</strong>, aceptan otras etiquetas(Tags) dentro de las mismas. Las <strong>BLOCK</strong> se les tiene que forzar a tener etiquetas dentro de ellas mediante CSS a ser posible. </p>
+        <h2>Titulos y Listas</h2>
+          <ol> <!-- Ejemplo en codigo de una lista ordenada-->
+              <li>Ejemeplo de H1 <h1>EJEMPLO</h1></li>
+              <li>Ejemeplo de H2 <h2>EJEMPLO</h2></li>
+              <li>Ejemeplo de H3 <h3>EJEMPLO</h3></li>
+              <li>Ejemeplo de H4 <h4>EJEMPLO</h4></li>
+              <li>Ejemeplo de H5 <h5>EJEMPLO</h5></li>
+              <li>Ejemeplo de H6 <h6>EJEMPLO</h6></li>
+          </ol>
+          <!-- Funcionalidad de HTML, BODY, HEAD, META, y Declaracion de HTML5 -->
+          <p>Todas las etiquetas empiezan con <strong>&lt;</strong> y acaban con <strong>/></strong>. Exceptuando algunas como Link o Meta por ejemplo, que no necesitan cierre, porque las mismas etiquetas son el contenido. Se pueden cerrar igualmente dentro de la misma con "/". En todo momento las etiquetas se escribiran en minuscula. Solo el contenido en ellas se puede escribir en mayuscula. En el Inicio del documento siempre tendremos que poner la siguiente linea de codigo:</p>
+          <p><strong>&lt:!DOCTYPE html></strong></p>
+          <p>Lo que realizamos en esta linea de codigo, es una declaracion del tipo de documento de html que vamos a usar, en este caso HTML5.</p>
+        <h2>Partes esenciales en la estructura de HTML:</h2>
+          <p><strong>HTML</strong> va a ser la primera de las etiquetas que vamos a poner, justo despues de la declaracion. Tiene que estar antes que <strong>HEAD</strong> y <strong>BODY</strong>, ya que conforma toda la forma del documento de HTML. </p>
+          <p><strong>HEAD</strong>, es la cabecera del documento(parte invisible), se cierra siempre con />, se utiliza mas para la funcionalidad de la pagina, normalmente no se vera el contenido ya que es solo para el navegador, pero si se desea se puede hacer visible. Tambien se utiliza para poder añadir CSS en la misma pagina, aunque normalmente se suele externalizar via archivo externo.</p>
+            <ul>
+                <li> En Head se pondran varias etiquetas <strong>METAS</strong>, una para referirse al CHARacter SETup, que es el formato de codificacion de caracteres, basicamente para que no se ignoren los simbolos de pronunciacion, o de escritura, acentos, interrogantes, etc...  La forma en que se pone es esta:</li> 
+                  <p>&lt;meta charset="UTF-8"></p>
+                <li> Otros elementos que se utilizan en <strong>HEAD</strong> con <strong>META</strong>, es el primer paso para la web responsive. Aunque esto normalmente lo hace CSS, ayuda al navegador que se utilize, a adaptar la pagina web al tipo de pantalla, y sus dimensiones, y que se vea bien al final. La linea de codigo es la siguiente:</li> 
+                  <p>&lt;meta name="viewport" content="width-device-width, initial-scale=1.0"></p>
+                <li>Hay mas etiquetas y propiedades con <strong>META</strong> para ayudar a adaptar la pagina al buscador, o navegador, como por ejemplo, puede utilizarse para que tenga funcionalidad en Internet Explorer, aunque hoy en dia se utiliza menos y el soporte del mismo esta retirado. Tambien serviran para otros navegadores, Firefox, Edge, Opera, Safari...etc</li>
+            </ul>
+          <p><strong>BODY</strong>, es el cuerpo del documento, se cierra siempre y se utiliza para la parte visual de la pagina, ya sean, frases, tablas, u otras cosas de caracter informativo.</p>
+      <!--Etiquetas de HTML-->
+        <h2>Etiquetas de HTML:</h2>
+      <p>Etiqueta <strong>P</strong>, sirve para Paragrafos, se cierra siempre, se debe seguir una etica con los paragrafos. Es una etiqueta tipo BLOCK.</p>
+      <p>Etiquetas <strong>&lt;&#33;&#45;&#45;</strong> con <strong>&#45;&#45;&gt;</strong> se puede escribir comentarios utiles en la pagina de programacion</p>
+      <p>Etiquetas como <strong>EM</strong> sirven para enfatizar, la <strong><i>I</i></strong> sirve para poner de estilo italics, la <strong>STRONG</strong> sirve para enfatizar algo mucho mas importante y dar importancia semantica, la <strong><b>B</b></strong> o bolt, tiene la misma funcion que Strong pero sin importancia semantica</p>
+      <p>Etiquetas <strong>META</strong> sirve para añadir informacion extra de la pagina, tanto para el navegador como para el motor de busqueda (SEO)</p>
+      <p>Etiqueta <strong>LINK</strong>, es una vinculacion a un archivo de estilo CSS externo</p>
+      <p>Etiqueta <strong>SCRIPT</strong>, es una vinculacion a un archivo Javascript externo</p>
+      <p>Etiqueta <strong>BR</strong> o Brake, sirve para forzar un salto de linea</p>
+      <p>Etiqueta <strong>HR</strong> realiza un corte visual, para el diseño, es mejor CSS</p>
+      <p>Etiqueta <strong>UL</strong> o <strong>OL</strong>, sirven para crear listas, Unordened List, y Ordened List, dentro de ellas estan:</p>
       <ul>
         <li><p>Etiqueta <strong>LI</strong> Objeto o Item en una lista(List Item)/p></li>
-        <li><p>Etiqueta <strong>DL</strong> lista de descripciones (Description List)</p></li>
+      </ul>
+      <p>Etiqueta <strong>DL</strong> lista de descripciones (Description List)</p>
+      <ul>
         <li><p>Etiqueta <strong>DT</strong>lista de descripcion de terminos(Description Terms)</p></li>
         <li><p>Etiqueta <strong>DD</strong>lista de descripcion de definiciones(Description Definition)</p></li>
-        <!-- Commandos emmet para Visual Studio Code-->
-        <li><p>En comandos EMMMET se puede usar el comando: ol>li*x | Esto hara crear una Ordened List, teniendo li dentro y x el numero de li's dentro. Con el caracter $, entre {} dan elementos numericos seguidos dentro la lista. Ej: ol>li{$}*x | , se pueden realizar mas operaciones con emmet, mas info: <a href="https://emmet.io/">emmet.io</a></p></li>
-        <li><p>Dentro de las <strong>OL</strong> existen atributos para cambiar la numeracion, por numeros, letras, numeros romanos,... se escribe con el atributo TYPE, el atributo REVERSED indica que sigue numeracion de abajo a arriba</p></li>
       </ul>
+        <!-- Commandos emmet para Visual Studio Code-->
+        <p>En comandos <span>EMMET</span> se puede usar el comando: <span>ol>li*x</span> | Esto hara crear una Ordened List, teniendo li dentro y x el numero de li's dentro. Con el caracter $, entre {} dan elementos numericos seguidos dentro la lista. Ej: <span>ol>li{$}*x</span> | , se pueden realizar mas operaciones con emmet, mas info: <a href="https://emmet.io/">emmet.io</a></p>
+        <p>Dentro de las <strong>OL</strong> existen atributos para cambiar la numeracion, por numeros, letras, numeros romanos,... se escribe con el atributo TYPE, el atributo REVERSED indica que sigue numeracion de abajo a arriba</p>
       <li><p>Las listas se pueden anidar dentro de las mismas, tener listas dentro de listas</p></li>
       <li><p>Etiqueta <strong>A</strong> o Hipervinculo, enlaza a una pagina web o una pagina dentro de nuestro indice (Etiqueta INLINE), se tiene que poner contenido para que aparezca el enlace, ej: "&lt;a href="x.jpg"/>TEXTO ENLACE&lt;/a></p></li>
       <li><p>Etiqueta <strong>HREF</strong> son para links de paginas, si ponemos # sirve para paginas internas a la web, <strong>SRC</strong> es para imagenes, se usa igual que HREF</p></li>
@@ -84,6 +85,9 @@
           <li><strong>_blank:</strong> En una ventana nueva, o pestaña</li>
         </ul>
     </ul>
+      <h2>Atributos o propiedades de las etiquetas:</h2>
+        <p>Etiqueta <strong>LANG</strong>, declara el idioma en que se escribira en html, css o js, o otros frameworks.</p>
+        <p>Etiqueta <strong>CHARSET</strong> determina la utilizacion standar de codificacion de semantica o gramatica, o la codificacion de simbolos( ¿? - _ , . !¡^[]{}, etc...).</p>
 
     <p>La estructura de las carpetas es, para imagenes ( IMG, IMAGES, IMATGES, IMAGEN ), para estilos ( CSS, ESTILOS, STYLES ), para scripts o frameworks ( SCRIPTS, JS ), y para recursos externos ( RECURSOS, RESOURCES )</p>
 

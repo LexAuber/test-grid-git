@@ -41,9 +41,10 @@ a:hover {
 a:active {
     color:red;
 }
+span{
+    color: white;
+}
 
 /* Para cambiar un elemento concreto, meter la ID mediante hastag: #elemento { }; para el elemento CLASS, es el . */
 /* Para cambiar el color de un link, cuando se esta encima de el (raton), se utiliza el atributo HOVER, antes de {, de esta manera: a:hover { x } */ 
-
-
 /* En CSS el diseny es de dalt a abaix, de movil a pantalla de pc, pasant per tab i portatil */
