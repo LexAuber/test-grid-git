@@ -1,0 +1,49 @@
+/* Apuntes de CSS aplicados en HTML*/
+
+/* Se pone el elemento, seguido por { } y dentro los atributor a cambiar */
+body {
+    background-color: #282828;
+    font-family: Verdana, Geneva, sans-serif;
+}
+h1, h2, h3, h4, h5, h6  {
+    color: #0069ff;
+}
+.actu {
+    color: rgb(182, 182, 182);
+}
+ul {
+    color: #73ADFF;
+}
+
+li {
+color: #c8c8c8;
+
+}
+
+strong{ 
+    color: #ffffff;
+}
+p {
+    color:#73adff
+}
+
+/* En CSS hay 4 estados de una url, 1- link, 2- visited, 3- hover, 4- active. Cada una significa una cosa diferente, un estado o actuacion sobre el mismo link, y se podra diferenciar por colores, segun como se quiera ver. */ 
+a:link {
+    color:blue;
+}
+a:visited {
+    color:orange;
+}
+a:hover {
+    
+    color: rgb(133, 177, 52);
+}
+a:active {
+    color:red;
+}
+
+/* Para cambiar un elemento concreto, meter la ID mediante hastag: #elemento { }; para el elemento CLASS, es el . */
+/* Para cambiar el color de un link, cuando se esta encima de el (raton), se utiliza el atributo HOVER, antes de {, de esta manera: a:hover { x } */ 
+
+
+/* En CSS el diseny es de dalt a abaix, de movil a pantalla de pc, pasant per tab i portatil */
