@@ -10,9 +10,9 @@
       <meta name="author" content="Alexandre Montserrat Auber"><!-- Declaracion del autor -->
   </head>
   <body>
-    <!-- Apuntes, es posible que se repitan etiquetas, o explicaciones-->
+<!-- Apuntes, es posible que se repitan etiquetas, o explicaciones-->
     <h1>Estructura HTML, apuntes generales en HTML</h1> <h3 class="actu">(Se actualizan cada dia en classe)</h3>
-      <!-- Algo de HTML y Tipos de etiquetas -->
+<!--- Algo de HTML y Tipos de etiquetas -->
       <p><strong>HTML</strong>, HyperText Markup Lenguage, o en español, Lenguaje de Marcado de HyperTexto, forma el esqueleto de una pagina web, para ello existe el marcado de etiquetas, el cual existen las <strong>BLOCK</strong> e <strong>INLINE</strong>, que se diferencian en que las <strong>INLINE</strong>, aceptan otras etiquetas(Tags) dentro de las mismas. Las <strong>BLOCK</strong> se les tiene que forzar a tener etiquetas dentro de ellas mediante CSS a ser posible. </p>
         <h2>Titulos y Listas</h2>
           <ol> <!-- Ejemplo en codigo de una lista ordenada-->
@@ -23,7 +23,7 @@
               <li>Ejemeplo de H5 <h5>EJEMPLO</h5></li>
               <li>Ejemeplo de H6 <h6>EJEMPLO</h6></li>
           </ol>
-          <!-- Funcionalidad de HTML, BODY, HEAD, META, y Declaracion de HTML5 -->
+<!------- Funcionalidad de HTML, BODY, HEAD, META, y Declaracion de HTML5 -->
           <p>Todas las etiquetas empiezan con <strong>&lt;</strong> y acaban con <strong>/></strong>. Exceptuando algunas como Link o Meta por ejemplo, que no necesitan cierre, porque las mismas etiquetas son el contenido. Se pueden cerrar igualmente dentro de la misma con "/". En todo momento las etiquetas se escribiran en minuscula. Solo el contenido en ellas se puede escribir en mayuscula. En el Inicio del documento siempre tendremos que poner la siguiente linea de codigo:</p>
           <p><strong>&lt:!DOCTYPE html></strong></p>
           <p>Lo que realizamos en esta linea de codigo, es una declaracion del tipo de documento de html que vamos a usar, en este caso HTML5.</p>
@@ -38,101 +38,108 @@
                 <li>Hay mas etiquetas y propiedades con <strong>META</strong> para ayudar a adaptar la pagina al buscador, o navegador, como por ejemplo, puede utilizarse para que tenga funcionalidad en Internet Explorer, aunque hoy en dia se utiliza menos y el soporte del mismo esta retirado. Tambien serviran para otros navegadores, Firefox, Edge, Opera, Safari...etc</li>
             </ul>
           <p><strong>BODY</strong>, es el cuerpo del documento, se cierra siempre y se utiliza para la parte visual de la pagina, ya sean, frases, tablas, u otras cosas de caracter informativo.</p>
-      <!--Etiquetas de HTML-->
+<!------Etiquetas dentro de HTML-->
         <h2>Etiquetas de HTML:</h2>
-      <p>Etiqueta <strong>P</strong>, sirve para Paragrafos, se cierra siempre, se debe seguir una etica con los paragrafos. Es una etiqueta tipo BLOCK.</p>
-      <p>Etiquetas <strong>&lt;&#33;&#45;&#45;</strong> con <strong>&#45;&#45;&gt;</strong> se puede escribir comentarios utiles en la pagina de programacion</p>
-      <p>Etiquetas como <strong>EM</strong> sirven para enfatizar, la <strong><i>I</i></strong> sirve para poner de estilo italics, la <strong>STRONG</strong> sirve para enfatizar algo mucho mas importante y dar importancia semantica, la <strong><b>B</b></strong> o bolt, tiene la misma funcion que Strong pero sin importancia semantica</p>
-      <p>Etiquetas <strong>META</strong> sirve para añadir informacion extra de la pagina, tanto para el navegador como para el motor de busqueda (SEO)</p>
-      <p>Etiqueta <strong>LINK</strong>, es una vinculacion a un archivo de estilo CSS externo</p>
-      <p>Etiqueta <strong>SCRIPT</strong>, es una vinculacion a un archivo Javascript externo</p>
-      <p>Etiqueta <strong>BR</strong> o Brake, sirve para forzar un salto de linea</p>
-      <p>Etiqueta <strong>HR</strong> realiza un corte visual, para el diseño, es mejor CSS</p>
-      <p>Etiqueta <strong>UL</strong> o <strong>OL</strong>, sirven para crear listas, Unordened List, y Ordened List, dentro de ellas estan:</p>
-      <ul>
-        <li><p>Etiqueta <strong>LI</strong> Objeto o Item en una lista(List Item)/p></li>
-      </ul>
-      <p>Etiqueta <strong>DL</strong> lista de descripciones (Description List)</p>
-      <ul>
-        <li><p>Etiqueta <strong>DT</strong>lista de descripcion de terminos(Description Terms)</p></li>
-        <li><p>Etiqueta <strong>DD</strong>lista de descripcion de definiciones(Description Definition)</p></li>
-      </ul>
-        <!-- Commandos emmet para Visual Studio Code-->
-        <p>En comandos <span>EMMET</span> se puede usar el comando: <span>ol>li*x</span> | Esto hara crear una Ordened List, teniendo li dentro y x el numero de li's dentro. Con el caracter $, entre {} dan elementos numericos seguidos dentro la lista. Ej: <span>ol>li{$}*x</span> | , se pueden realizar mas operaciones con emmet, mas info: <a href="https://emmet.io/">emmet.io</a></p>
-        <p>Dentro de las <strong>OL</strong> existen atributos para cambiar la numeracion, por numeros, letras, numeros romanos,... se escribe con el atributo TYPE, el atributo REVERSED indica que sigue numeracion de abajo a arriba</p>
-      <li><p>Las listas se pueden anidar dentro de las mismas, tener listas dentro de listas</p></li>
-      <li><p>Etiqueta <strong>A</strong> o Hipervinculo, enlaza a una pagina web o una pagina dentro de nuestro indice (Etiqueta INLINE), se tiene que poner contenido para que aparezca el enlace, ej: "&lt;a href="x.jpg"/>TEXTO ENLACE&lt;/a></p></li>
-      <li><p>Etiqueta <strong>HREF</strong> son para links de paginas, si ponemos # sirve para paginas internas a la web, <strong>SRC</strong> es para imagenes, se usa igual que HREF</p></li>
-      <li><p>Etiqueta <strong>DIV</strong>, es una division en el que podemos poner cualquier cosa</p></li>
-      <li><p>Etiqueta <strong>COORDS</strong>para indicar coordenadas de una imagen o mapa.</p></li>
-      <li><p>Etiqueta <strong>ABBR</strong>, o abrebiation, sirve para las abreviaciones o siglas, como WHO (World Health Organitzation)</p></li>
-      <li><p>Etiqueta <strong>Blockquote</strong> sirve para las citas, con el atributo CITE, el enlace de la cita, y luego la cita en si.</p></li>
-      <li><p>Etiqueta <strong>MARK</strong>, para subrallar un texto en color</p></li>
-      <li><p>Etiqueta <strong>SMALL</strong>, para empequeñecer textos</p></li>
-      <li><p>Etiqueta <strong>DEL</strong>, para rallar por el medio los textos</p></li>
-      <li><p>Etiqueta <strong>WIDTH</strong> es <em>anchura</em> de imagen/text en pixels, tambien se pueden utilizar porcentajes, si se amplia el area del buscador(margenes fisicos) se amplia la imagen</p></li>
-      <li><p>Etiqueta <strong>HEIGHT</strong> es <em>altura</em> de imagen/text en pixels, tambien se pueden utilizar porcentajes, si se amplia el area del buscador(margenes fisicos) se amplia la imagen</p></li>
-      <li><p>Etiqueta <strong>FIGURE</strong> usada para definir una imagen que no es indispensable, es opcional, pero refuerza el contenido. Añade unos margenes</p></li>
-        <ul>
-          <li><strong>FIGCAPTION</strong> añade un pie de imagen, texto de la imagen descriptiva</li>
-        </ul>
-      <li><p>Etiqueta <strong>ALT</strong> texto alternativo o substitutivo antes de cargar la imagen, en caso de no cargar la pagina para especificar que es.</p></li>
-      <li><p>Etiqueta <strong>USEMAP</strong> Indica una zona especifica de una imagen para vincularla a otra pagina</p></li>
-      <li><p>Etiqueta <strong>TITLE</strong> describe un titulo para documento, o imagen</p></li><li><p>Etiqueta <strong>LONGDESC</strong> Descripcion de la la imagen para descrivir algo, textos muy largos</p></li>
-      <li><p>Etiqueta <strong>TARGET</strong> es un atributo para indicar la apertura del enlace cuando hacemos clic, se une con los atributos secundarios _blank y _self</p></li>
-        <ul>
-          <li><strong>_self:</strong> En la misma ventana del buscador donde esta el usuario</li>
-          <li><strong>_blank:</strong> En una ventana nueva, o pestaña</li>
-        </ul>
-    </ul>
-      <h2>Atributos o propiedades de las etiquetas:</h2>
-        <p>Etiqueta <strong>LANG</strong>, declara el idioma en que se escribira en html, css o js, o otros frameworks.</p>
-        <p>Etiqueta <strong>CHARSET</strong> determina la utilizacion standar de codificacion de semantica o gramatica, o la codificacion de simbolos( ¿? - _ , . !¡^[]{}, etc...).</p>
-
-    <p>La estructura de las carpetas es, para imagenes ( IMG, IMAGES, IMATGES, IMAGEN ), para estilos ( CSS, ESTILOS, STYLES ), para scripts o frameworks ( SCRIPTS, JS ), y para recursos externos ( RECURSOS, RESOURCES )</p>
-
-    <p> La estructura de una etiqueta (tag) es, &lt; Etiqueta -> Atributo -> valor />. En maquetacion hay que saber que elementos, atributos o etiquetas son inline y cuales block. Las etiquetas sin cierre, son tags que no tienen contenido mas que los atributos añadidos. Se puede cerrar igualmente con "/", un ejemplo es la etiqueta <strong>IMG</strong>, que seria &lt;img src="x"/></p>
-
-    <p><strong>Ruta relativa:</strong> Para las rutas de enlace a traves de HTML, tendremos que escribir el camino a seguir, ejemplo: Carpeta de imagen/imagen.jpg. Lo mismo con archivos CSS o JS </p>
-
-    <p><strong>Ruta absoluta:</strong> Se tiene que escribir todo la direccion del archivo, ej: C:/Windows/Users/X/Desktop/Imagenes/y.jpg. Para rutas en un servidor se utiliza las dos barras, antes y despues de la carpeta /Imagenes/</p>
-
-    <p> Para llegar a otras carpetas, se tiene que salir de la carpeta actual, entrar a la otra y buscar el archivo, para ello se escribe ../ para ordenar la salida de la carpeta. Ej: ../imagenes/imagen.jpg</p>
-
-    <p>En la etiqueta <strong>IMG</strong> se utiliza para imagenes, y usa el tag SRC para enlazar las imagenes, no necesita un cierre "/"</p>
-
+          <p> La estructura de una etiqueta (tag) es, <span>&lt; Etiqueta -> Atributo -> Valor /></span>. En maquetacion hay que saber que elementos, atributos o etiquetas son inline y cuales block. Las etiquetas sin cierre, son tags que no tienen contenido mas que los atributos añadidos. Se puede cerrar igualmente con "/", un ejemplo es la etiqueta <strong>IMG</strong>, que seria &lt;img src="x"/></p>
+          <p>Etiqueta <strong>P</strong>, sirve para Paragrafos, se cierra siempre, se debe seguir una etica con los paragrafos. Es una etiqueta tipo BLOCK.</p>
+          <p>Etiquetas <strong>&lt;&#33;&#45;&#45;</strong> con <strong>&#45;&#45;&gt;</strong> se puede escribir comentarios utiles en la pagina de programacion.</p>
+          <p>Etiquetas como <strong>EM</strong> sirven para enfatizar, la <strong><i>I</i></strong> sirve para poner de estilo italics, la <strong>STRONG</strong> sirve para enfatizar algo mucho mas importante y dar importancia semantica, la <strong><b>B</b></strong> o bolt, tiene la misma funcion que Strong pero sin importancia semantica.</p>
+          <p>Etiquetas <strong>META</strong> sirve para añadir informacion extra de la pagina, tanto para el navegador como para el motor de busqueda (SEO).</p>
+          <p>Etiqueta <strong>LINK</strong>, es una vinculacion a un archivo de estilo CSS externo.</p>
+          <p>Etiqueta <strong>SCRIPT</strong>, es una vinculacion a un archivo Javascript externo.</p>
+          <p>Etiqueta <strong>BR</strong> o Brake, sirve para forzar un salto de linea.</p>
+          <p>Etiqueta <strong>HR</strong> realiza un corte visual, para el diseño, es mejor CSS.</p>
+          <p>Etiqueta <strong>A</strong> o Hipervinculo, enlaza a una pagina web o una pagina dentro de nuestro indice (Etiqueta INLINE), se tiene que poner contenido para que aparezca el enlace, ej: "&lt;a href="x.jpg"/>TEXTO ENLACE&lt;/a></p>
+          <p>Etiqueta <strong>IMG</strong> se utiliza para imagenes, y usa el tag SRC para enlazar las imagenes, no necesita un cierre "/".</p>
+          <p>Etiqueta <strong>ABBR</strong>, o abrebiation, sirve para las abreviaciones o siglas, como WHO (World Health Organitzation)</p>
+          <p>Etiqueta <strong>Blockquote</strong> sirve para las citas, con el atributo CITE, el enlace de la cita, y luego la cita en si.</p>
+          <p>Etiqueta <strong>FIGURE</strong> usada para definir una imagen que no es indispensable, es opcional, pero refuerza el contenido. Añade unos margenes</p>
+          <p>Etiqueta <strong>FIGCAPTION</strong> añade un pie de imagen, texto de la imagen descriptiva</p>
+          <p>Etiqueta <strong>DETAILS</strong>, permite trabajar con la etiqueta <strong>SUMARY</strong>, que es el sumario en formato lista, esconde lo que pongamos dentro o mostrarlo, son detalles adicionales. Puedes añadir paragrafos con el nombre de titulos de libros por ejemplo.</p>
+          <p>Etiqueta <strong>SUMMARY</strong> define una cabezera visible para el elemento DETAILS, se pone dentro de DETAILS</p>
+          <p>Etiqueta <strong>SPAN</strong> no tiene un significado especial, se usa para dar estilo a partes diferentes del texto con CSS. Es un contenedor de linea, por lo que se puede usar como contenedor de texto, y si puede ser, sera el ultimo recurso por posibles problemas de modificaciones a posteriori.</p>
+          <p>Etiqueta <strong>MARK</strong> Resalta texto</p>
+          <p>Etiqueta <strong>TIME</strong> define una fecha o hora</p>
+          <p>Etiqueta <strong>FORM</strong> es para formularios.</p>
+          <p>Etiqueta <strong>FIGURE</strong> convierte una imagen en un bloque</p>
+<!-------- Etiqueta DIV y sus funcionalidades-->
+          <p>Etiqueta <strong>DIV</strong>, es una division en el que podemos poner cualquier cosa. Es un elemento a nivel de bloque que puede ser usado como contener para agrupar otros elementos html. Sirven para aplicar estilos, definir capas y distribuir los elementos de la pagina. Tradicionalmente se utiliza para maquetar paginas y aplicar efectos de Javascript.</p>
+<!---------- Etiquetas semanticas para navegadores en HTML5-->
+          <h3>Etiquetas Semanticas (parecidas al DIV):</h3>
+            <p>En HTML5 parte de la faena de maquetacion pasa por nuevas etiquetas semanticas que veremos mas adelante, como <strong>HEADER, FOOTER,NAV, ARTICLE, ASIDE, FIGURE, o SECTION</strong>. </p>
+            <p>Dentro de <strong>SECTION</strong> (Puede ser por ejemplo seccion de noticias) se puede poner la etiqueta <strong>ARTICLE</strong> que sera el contenido en concreto(En la seccion de noticias, serian las noticias en si mismas), los <strong>ASIDE</strong> (fuera de <strong>SECTION</strong>) puede estar en cualquier parte de la pagina pero suele ser informacion adicional o extra, o externa, Tops, o cosas similares. En el <strong>FOOTER</strong>, suelen ser datos de contacto, no se recomienda ponerlo dentro de <strong>SECION</strong>.</p>
+            <p>Etiqueta <strong>MAIN</strong>, es parecido al <strong>BODY</strong>, es la que tiene toda la informacion de la pagina, que no es lo mismo que todo el contenido visual de la web entera. Dentro de el, puede estar la parte central de la pagina <strong>SECTION</strong>, <strong>ARTICLE</strong>, <strong>ASIDE</strong>, pero no estaran ni <strong>HEADER</strong> ni <strong>FOOTER</strong>.</p>
+            <ul>
+                <li>HEADER -> cabecera</li>
+                <li>MAIN -> cuerpo</li>
+                <li>FOOTER ->pie de pagina</li>
+            </ul>
+<!-------- Apartado para las listas -->
+          <h3>Tipos de listas</h3>
+            <p>Etiqueta <strong>UL</strong>, sirve para crear listas sin orden (Unordened List). Existen atributos o propiedades para cambiar la forma de listado, por defecto aparecen redondas, pero pueden ser estilizadas via CSS, y cambiar la forma por cuadrados, redondas huecas, etc... </p>
+            <p>Etiqueta <strong>OL</strong>, sirve para crear listas (Ordened List). Existen atributos o propiedades para cambiar la numeracion, por numeros, letras, numeros romanos,etc... Se escriben junto al atributo/propiedad TYPE. El atributo/propiedad REVERSED indica que sigue numeracion de abajo a arriba.</p>
+            <p>Dentro de OL y UL estan:</p>
+            <ul><!--Ejemplo de listas no ordenadas-->
+              <li><p>Sub-Etiqueta <strong>LI</strong> Objeto o Item en una lista(List Item).</p></li>
+            </ul>
+            <p>Etiqueta <strong>DL</strong> lista de descripciones (Description List).</p>
+            <ul>
+              <li><p>Sub-Etiqueta <strong>DT</strong> lista de descripcion de terminos(Description Terms).</p></li>
+              <li><p>Sub-Etiqueta <strong>DD</strong> lista de descripcion de definiciones(Description Definition).</p></li>
+            </ul>
+            <p>Las listas se pueden anidar dentro de las mismas, tener listas dentro de listas.</p>
+<!--------- Commandos emmet para Visual Studio Code-->
+            <p>En comandos <span>EMMET</span> se puede usar el comando: <span>ol>li*x</span>. Esto hara crear una Ordened List, teniendo li dentro y x el numero de li's dentro. Con el caracter $, entre {} dan elementos numericos seguidos dentro la lista. Ej: <span>ol>li{$}*x</span> , se pueden realizar mas operaciones con emmet, mas info: <a href="https://emmet.io/">emmet.io</a>.</p>
+<!--------- Este caso es la TECLA, no la ETIQUETA -->
+            <p>Con la tecla <strong>ALT</strong>, se pueden seleccionar varios tags o sitios donde escribir a la vez, y lo mismo, sirve tambien para modificar textos o tags</p>
+<!-------Atributos y/o propiedades modificantes de las etiquetas-->
+        <h2>Atributos o propiedades de las etiquetas:</h2>
+          <p>Atributo <strong>LANG</strong>, declara el idioma en que se escribira en html, css o js, o otros frameworks.</p>
+          <p>Atributo <strong>CHARSET</strong> determina la utilizacion standar de codificacion de semantica o gramatica, o la codificacion de simbolos( ¿? - _ , . !¡^[]{}, etc...).</p>
+          <p>Atributo <strong>HREF</strong> son para links de paginas, si ponemos # sirve para paginas internas a la web. Muy similar al SRC. </p>
+          <p>Atributo <strong>SRC</strong> marca la ruta para las imagenes. Muy similar al HREF.</p>
+          <p>Atributo <strong>COORDS</strong>para indicar coordenadas de una imagen o mapa.</p>
+          <p>Atributo <strong>WIDTH</strong> es <em>anchura</em> de imagen/text en pixels, tambien se pueden utilizar porcentajes, si se amplia el area del buscador(margenes fisicos) se amplia la imagen</p>
+          <p>Atributo <strong>HEIGHT</strong> es <em>altura</em> de imagen/text en pixels, tambien se pueden utilizar porcentajes, si se amplia el area del buscador(margenes fisicos) se amplia la imagen</p>
+          <ul>
+            <li>Hay una curisidad en HTML de CSS aplicada a estos 2 atributos anteriores(Width y Height), y es que si solo se aplica uno de estos dos atributos, CSS por defecto equilibrara la "otra parte" automaticamente. Dando mas importancia al atributo que hayamos puesto nosotros, y equilibrandolo automaticamente.</li>
+          </ul>
+          <p>Atributo <strong>MARK</strong>, para subrallar un texto en color</p>
+          <p>Atributo <strong>SMALL</strong>, para empequeñecer textos</p>
+          <p>Atributo <strong>ALT</strong> texto alternativo o substitutivo antes de cargar la imagen, en caso de no cargar la pagina para especificar que es.</p>
+          <p>Atributo <strong>USEMAP</strong> Indica una zona especifica de una imagen para vincularla a otra pagina</p>
+          <p>Atributo <strong>TITLE</strong> describe un titulo para documento, o imagen</p>
+          <p>Atributo <strong>LONGDESC</strong> Descripcion de la la imagen para descrivir algo, textos muy largos</p>
+          <p>Atributo <strong>DEL</strong>, para rallar por el medio los textos</p>
+          
+          <p>Atributo <strong>TARGET</strong> es un atributo para indicar la apertura del enlace cuando hacemos clic, se une con los atributos secundarios _blank y _self</p>
+            <ul>
+              <li><strong>_self:</strong> En la misma ventana del buscador donde esta el usuario</li>
+              <li><strong>_blank:</strong> En una ventana nueva, o pestaña</li>
+            </ul>
+<!-------Otras cosas de HTML, carpetas, recomendaciones, etc...-->
+        <h2>Otras cosas de HTML</h2>
+    <p>La estructura de las carpetas es, para imagenes ( IMG, IMAGES, IMATGES, IMAGEN ), para estilos ( CSS, ESTILOS, STYLES ), para scripts o frameworks ( SCRIPTS, JS ), y para recursos externos ( RECURSOS, RESOURCES).</p>
     <p> Para hacer saltos o crear un Indice en la propia pagina, se utiliza el atributo <strong>ID</strong>, que identificara para realizar enlaces en la misma pagina. Se utiliza con los hipervinculos, para saltar a un mismo punto del documento. ID es un identificador unico, no puede repetirse dos veces, el CLASS si puede. Se utiliza el elemento <strong>#</strong> para hacer referencia al ID que queremos ir. EJ: &lt;a href="#x.html">X&lt;/a>, cuando hagamos clic nos dirigira a esa parte de la pagina.</p>
-
     <p>Se puede crear enlaces especiales como por ejemplo, a emails, para cuando queramos contactar aunque ya no se utiliza para evitar bots de spam y obliga al usuario a tener un gestor de mails instalado. ES RECOMENDABLE NO HACERLO, pero saber que existe. Se le puede poner el atributo SUBJECT para poner en el asunto del Email automaticamente. ej: "x@x.com?subject=Error"</p>
-
     <p>Se puede hacer enlaces a archivos para ejecutarlos, recomendado solo en intranets, es muy poco fiable y poco seguro en internet. Simplemente se añade la ruta relativa del .exe.</p>
-      <!-- Este caso es la TECLA, no la ETIQUETA -->
-    <p>Con la tecla <strong>ALT</strong>, se pueden seleccionar varios tags o sitios donde escribir a la vez, y lo mismo, sirve tambien para modificar textos o tags</p>
+    <ul>
+        <li>Consideraciones: Los elementos de bloque pueden contener elementos en linea o otros elementos en bloque. Los elementos en linea pueden conener datos (texto) o otros elementos en linea. Algunos elementos de bloque como los paragrafos pueden contnener directamente datos. Es un error colocar elementos de bloque dentro de elementos en linea y, aunque funcione, el validador HTML no lo pasara.</li>
+        <li>De momento, para trabajar, solamente tendremos en cuenta unas reglas basicas que son:</li>
+        <ul>
+          <li>Los elementos de bloque se situan en lineas diferentes y cojen todo el amplio disponible</li>
+          <li>Los elementos de linea se situan en la misma linea, una tras de otra</li>
+          <li>Para hacer columnas, colocaremos diveros elementos de bloque seguidos, modificandolos por CSS</li>
+        </ul>
+      </ul>
+          <h3> Tipos de rutas para vinculos:</h3>
+            <p><strong>Ruta relativa:</strong> Para las rutas de enlace a traves de HTML, tendremos que escribir el camino a seguir, ejemplo: Carpeta de imagen/imagen.jpg. Lo mismo con archivos CSS o JS </p>
+            <p><strong>Ruta absoluta:</strong> Se tiene que escribir todo la direccion del archivo, ej: C:/Windows/Users/X/Desktop/Imagenes/y.jpg. Para rutas en un servidor se utiliza las dos barras, antes y despues de la carpeta /Imagenes/</p>
+            <p> Para llegar a otras carpetas, se tiene que salir de la carpeta actual, entrar a la otra y buscar el archivo, para ello se escribe ../ para ordenar la salida de la carpeta. Ej: ../imagenes/imagen.jpg</p>
+    
+    
 
-    <p>Etiqueta <strong>DETAILS</strong>, permite trabajar con la etiqueta <strong>SUMARY</strong>, que es el sumario en formato lista, esconde lo que pongamos dentro o mostrarlo, son detalles adicionales. Puedes añadir paragrafos con el nombre de titulos de libros por ejemplo.</p>
-    <p>SUMMARY define una cabezera visible para el elemento DETAILS, se pone dentro de DETAILS</p>
-    <p><strong>MARK</strong> Resalta texto</p>
-    <p><strong>TIME</strong> define una fecha o hora</p>
-    <p>Etiqueta <strong>DIV</strong> es un elemento a nivell de blopque que puede ser usado como contener para agrupar otros elementos html. Sirven para aplicar estilos, definir capas y distribuir los elementos de la pagina. Tradicionalmente se utiliza para maquetar paginas y aplicar efectos de Javascript. En HTML5 parte de la faena de maquetacion pasa por nuevas etiquetas semanticas que veremos mas adelante, como <strong>HEADER</strong>, <strong>FOOTER</strong>, <strong>NAV</strong>, <strong>ARTICLE</strong>, <strong>ASIDE,</strong> <strong>FIGURE,</strong> o <strong>SECTION</strong>.</p>
-    <p>Dentro de los <strong>SECTION</strong> (como por ejemplo seccion de noticias) se puede poner la etiqueta <strong>ARTICLE</strong> (noticias en si), los <strong>ASIDE</strong> (fuera de <strong>SECTION</strong>) puede estar en cualquier parte de la pagina pero suele ser informacion adicional o extra, o externa, Tops, o cosas similares. En el <strong>FOOTER</strong>, suelen ser datos de contato, no se recomienda ponerlo dentro de <strong>SECION</strong>.</p>
-    <p>Etiqueta <strong>MAIN</strong>, es parecido al <strong>BODY</strong>, es la que tiene toda la informacion de la pagina, que no es lo mismo que todo el contenido visual. Dentro de el, puede estar la parte central de la pagina <strong>SECTION</strong>, <strong>ARTICLE</strong>, <strong>ASIDE</strong>, pero no estaran ni <strong>HEADER</strong> ni <strong>FOOTER</strong>.</p>
-    <ul>
-        <li>HEADER -> cabecera</li>
-        <li>MAIN -> cuerpo</li>
-        <li>FOOTER ->pie de pagina</li>
-      </ul>
-    <p>Etiqueta <strong>SPAN</strong> no tiene un significado especial, se usa para dar estilo a partes diferentes del texto con CSS. Es un contenedor de linea, por lo que se puede usar como contenedor de texto, y si puede ser, sera el ultimo recurso por posibles problemas de modificaciones a posteriori.</p>
-    <ul>
-      <li>Consideraciones: Los elementso de bloque pueden contener elementos en linea o otros elementos en bloque. Los elementos en linea pueden conener datos (texto) o otros elementos en linea. Algunos elementos de bloque como los paragrafos pueden contnener directamente datos. Es un error colocar elementos de bloque dentro de elementos en linea y, aunque funcione, el validador HTML no lo pasara.</li>
-      <li>De momento, para trabajar, solamente tendremos en cuenta unas reglas basicas que son:</li>
-      <ul>
-        <li>Los elementos de bloque se situan en lineas diferentes y cojen todo el amplio disponible</li>
-        <li>Los elementos de linea se situan en la misma linea, una tras de otra</li>
-        <li>Para hacer columnas, colocaremos diveros elementos de bloque seguidos, modificandolos por CSS</li>
-      </ul>
-    </ul>
-    <p>Etiqueta <strong>FORM</strong> es para formularios.</p>
-    <p>Etiqueta <strong>FIGURE</strong> convierte una imagen en un bloque</p>
+    
     <p>El microdata ayuda a dar informacion semantica en las estructuras</p>
     <p>La etiqueta <strong>TABLE</strong>, no se recomienda, es una texnica antigua, para ello es mejor los <strong>DIVS</strong>. Texnica dominante actualmente, mas versatil y potenten combinada con CSS, permite cambiar la distribucion de elementos, es mas amigable con los buscadores y navegadores aurales.</p>
     

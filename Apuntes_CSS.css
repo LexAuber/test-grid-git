@@ -28,6 +28,7 @@ p {
 }
 
 /* En CSS hay 4 estados de una url, 1- link, 2- visited, 3- hover, 4- active. Cada una significa una cosa diferente, un estado o actuacion sobre el mismo link, y se podra diferenciar por colores, segun como se quiera ver. */ 
+/* En CSS el diseny es de dalt a abaix, de movil a pantalla de pc, pasant per tab i portatil */
 a:link {
     color:blue;
 }
@@ -45,6 +46,4 @@ span{
     color: white;
 }
 
-/* Para cambiar un elemento concreto, meter la ID mediante hastag: #elemento { }; para el elemento CLASS, es el . */
-/* Para cambiar el color de un link, cuando se esta encima de el (raton), se utiliza el atributo HOVER, antes de {, de esta manera: a:hover { x } */ 
-/* En CSS el diseny es de dalt a abaix, de movil a pantalla de pc, pasant per tab i portatil */
+
