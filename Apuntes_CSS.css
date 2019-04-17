@@ -52,6 +52,9 @@ color: #c8c8c8;
 .actu {
     color: #b6b6b6;
 }
+.red {
+    color:#ff0000;
+}
 
 /*atributos*/
 
@@ -74,13 +77,15 @@ a:hover {
 a:active {
     color:#ff0000;
 }
-span{
-    color: #ffffff;
-}
+
 /*a:focus {
     color:yellow;
     border: 3px solid #ffffff;
 }*/
+/* otros*/
+span {
+    color: #ffffff;
+}
 
 /*-- Media Queries Responsiu -----------*/
 
