@@ -27,7 +27,7 @@ p {
     color:#73adff
 }
 
-/* En CSS hay 4 estados de una url, 1- link, 2- visited, 3- hover, 4- active. Cada una significa una cosa diferente, un estado o actuacion sobre el mismo link, y se podra diferenciar por colores, segun como se quiera ver. */ 
+/* En CSS hay 4 pseudo-estados y un 5to extra de una url, 1- link, 2- visited, 3- hover, 4- active y 5- focus. Cada una significa una cosa diferente, un estado o actuacion sobre el mismo link, y se podra diferenciar por colores, segun como se quiera ver. */ 
 /* En CSS el diseny es de dalt a abaix, de movil a pantalla de pc, pasant per tab i portatil */
 a:link {
     color:blue;
@@ -42,6 +42,10 @@ a:hover {
 a:active {
     color:red;
 }
+/*a:focus {
+    color:yellow;
+    border: 3px solid #ffffff;
+}*/
 span{
     color: white;
 }
