@@ -14,30 +14,30 @@
       <!-- Apuntes, es posible que se repitan etiquetas, o explicaciones-->
     <h1>Estructura HTML, apuntes generales en HTML</h1> 
         <h3 class="actu">(Se actualizan cada dia en classe)</h3>
+        <p>Indice de navegacion:</p>
       <nav>
         <ul>
-          <li><a href="#">Titulos</a></li>
-          <li><a href="#">DOM</a></li>
-          <li><a href="#">Partes esenciales en la estructura de HTML</a></li>
-          <li><a href="#">Etiquetas de HTML</a></li>
-          <li><a href="#">Etiquetas Semanticas</a></li>
-          <li><a href="#">Tipos de Listas</a></li>
-          <li><a href="#">Atributos/propiedades</a></li>
-          <li><a href="#">Otras cosas de HTML</a></li>
-          <li><a href="#"></a>Tipos de rutas para vinculos</li>
-          <li><a href="#"></a>Elementos Multimedia</li>
-          <li><a href="#">Iframes</a></li>
-          <li><a href="#">Codificacion</a></li>
-          <li><a href="#">Tipografias</a></li>
+          <li><a href="#D">DOM</a></li>
+          <li><a href="#T">Titulos</a></li>
+          <li><a href="#E">Partes esenciales en la estructura de HTML</a></li>
+          <li><a href="#EH">Etiquetas de HTML</a></li>
+          <li><a href="#ES">Etiquetas Semanticas</a></li>
+          <li><a href="#L">Tipos de Listas</a></li>
+          <li><a href="#A">Atributos/propiedades</a></li>
+          <li><a href="#O">Otras cosas de HTML</a></li>
+          <li><a href="#R">Tipos de rutas para vinculos</a></li>
+          <li><a href="#M">Elementos Multimedia</a></li>
+          <li><a href="#I">Iframes</a></li>
+          <li><a href="#C">Codificacion</a></li>
+          <li><a href="#TP">Tipografias</a></li>
         </ul>
       </nav>
     </header>
-
 <!--- Algo de HTML y Tipos de etiquetas -->
       <p><strong>HTML</strong>, HyperText Markup Lenguage, o en español, Lenguaje de Marcado de HyperTexto, forma el esqueleto de una pagina web, para ello existe el marcado de etiquetas, el cual existen las <strong>BLOCK</strong> e <strong>INLINE</strong>, que se diferencian en que las <strong>INLINE</strong>, aceptan otras etiquetas(Tags) dentro de las mismas. Las <strong>BLOCK</strong> se les tiene que forzar a tener etiquetas dentro de ellas mediante CSS a ser posible. </p>
-        <h2>DOM</h2>
+        <h2 id="D">DOM</h2>
         <p>Que es HTML DOM? HTML DOM es un Modelo de Objetos para HTML.</p>
-        <h2>Titulos</h2>
+        <h2 id="T">Titulos</h2>
           <ol> <!-- Ejemplo en codigo de una lista ordenada-->
               <li>Ejemeplo de H1 <h1>EJEMPLO</h1></li>
               <li>Ejemeplo de H2 <h2>EJEMPLO</h2></li>
@@ -52,7 +52,7 @@
           <p>Lo que realizamos en esta linea de codigo, es una declaracion del tipo de documento de html que vamos a usar, en este caso HTML5.</p>
           <h2> EXPLICACION DEL DOM!!!!</h2>
 <!-------Estructura de HTML basica-->
-        <h2>Partes esenciales en la estructura de HTML:</h2>
+        <h2 id="E">Partes esenciales en la estructura de HTML:</h2>
           <p><strong>HTML</strong> va a ser la primera de las etiquetas que vamos a poner, justo despues de la declaracion. Tiene que estar antes que <strong>HEAD</strong> y <strong>BODY</strong>, ya que conforma toda la forma del documento de HTML. </p>
           <p><strong>HEAD</strong>, es la cabecera del documento(parte invisible), se cierra siempre con />, se utiliza mas para la funcionalidad de la pagina, normalmente no se vera el contenido ya que es solo para el navegador, pero si se desea se puede hacer visible. Tambien se utiliza para poder añadir CSS en la misma pagina, aunque normalmente se suele externalizar via archivo externo. Las etiquetas que van dentro de head: title, style, meta, link, script, noscript, base.</p>
             <ul>
@@ -62,17 +62,16 @@
                   <p>&lt;meta name="viewport" content="width-device-width, initial-scale=1.0"></p>
                 <li>Hay mas etiquetas y propiedades con <strong>META</strong> para ayudar a adaptar la pagina al buscador, o navegador, como por ejemplo, puede utilizarse para que tenga funcionalidad en Internet Explorer, aunque hoy en dia se utiliza menos y el soporte del mismo esta retirado. Tambien serviran para otros navegadores, Firefox, Edge, Opera, Safari...etc</li>
             </ul>
-          <p>TITLE: Define el titulo de la pagina, sirve para indicarlo al navegador, para los motores de busqueda e indexarlo. Debe de ser coherente.</p>
-          <p>SCRIPT: Se usa para incoporar scripts mediante el atributo "src". Lo que suelen hacer son manipulacion de imagenes, validacion de datos, canvios dinamicos de documentos, etc...</p>
-          <p>NOSCRIPT: Aparece un mensaje en el caso de que el navegador tenga desactivadas las funciones de javascript</p>
-          <p>STYLE: Sirve para añadir una hora de estilos en el head. Ya puede ser interna o externa, si es externa debera tener la etiqueta link, con los atributos rel, type, y href.</p>
-          <p>META: Sirve para añadir informacion adicional. Tiene atributos: charset, description, keywords, author, y refresh.</p>
-          <p>DESCRIPTION: Cuanto mas corto mejor, si no los buscadores pueden penalizarte.</p>
-          <p>BASE: Especifica la URL base para todos los enlaces con ruta relativa. Sirve para indicar una ruta base, y el resto de links de la pagina partiran de esa base.</p>
+          <p><strong>TITLE</strong>: Define el titulo de la pagina, sirve para indicarlo al navegador, para los motores de busqueda e indexarlo. Debe de ser coherente.</p>
+          <p><strong>SCRIPT</strong>: Se usa para incoporar scripts mediante el atributo "src". Lo que suelen hacer son manipulacion de imagenes, validacion de datos, canvios dinamicos de documentos, etc...</p>
+          <p><strong>NOSCRIPT</strong>: Aparece un mensaje en el caso de que el navegador tenga desactivadas las funciones de javascript</p>
+          <p><strong>STYLE</strong>: Sirve para añadir una hora de estilos en el head. Ya puede ser interna o externa, si es externa debera tener la etiqueta link, con los atributos rel, type, y href.</p>
+          <p><strong>META</strong>: Sirve para añadir informacion adicional. Tiene atributos: charset, description, keywords, author, y refresh.</p>
+          <p><strong>DESCRIPTION</strong>: Cuanto mas corto mejor, si no los buscadores pueden penalizarte.</p>
+          <p><strong>BASE</strong>: Especifica la URL base para todos los enlaces con ruta relativa. Sirve para indicar una ruta base, y el resto de links de la pagina partiran de esa base.</p>
           <p><strong>BODY</strong>, es el cuerpo del documento, se cierra siempre y se utiliza para la parte visual de la pagina, ya sean, frases, tablas, u otras cosas de caracter informativo.</p>
-
 <!------Etiquetas dentro de HTML-->
-        <h2>Etiquetas de HTML:</h2>
+        <h2 id="EH">Etiquetas de HTML:</h2>
           <p> La estructura de una etiqueta (tag) es, <span>&lt; Etiqueta -> Atributo -> Valor /></span>. En maquetacion hay que saber que elementos, atributos o etiquetas son inline y cuales block. Las etiquetas sin cierre, son tags que no tienen contenido mas que los atributos añadidos. Se puede cerrar igualmente con "/", un ejemplo es la etiqueta <strong>IMG</strong>, que seria &lt;img src="x"/></p>
           <p>Etiqueta <strong>P</strong>, sirve para Paragrafos, se cierra siempre, se debe seguir una etica con los paragrafos. Es una etiqueta tipo BLOCK.</p>
           <p>Etiquetas <strong>&lt;&#33;&#45;&#45;</strong> con <strong>&#45;&#45;&gt;</strong> se puede escribir comentarios utiles en la pagina de programacion.</p>
@@ -98,9 +97,9 @@
 <!-------- Etiqueta DIV y sus funcionalidades-->
           <p>Etiqueta <strong>DIV</strong>, es una division en el que podemos poner cualquier cosa. Es un elemento a nivel de bloque que puede ser usado como contener para agrupar otros elementos html. Sirven para aplicar estilos, definir capas y distribuir los elementos de la pagina. Tradicionalmente se utiliza para maquetar paginas y aplicar efectos de Javascript.</p>
 <!--------- Etiquetas semanticas para navegadores en HTML5-->
-          <h3>Etiquetas Semanticas (parecidas al DIV):</h3>
+          <h3 id="ES">Etiquetas Semanticas (parecidas al DIV):</h3>
             <p>En HTML5 parte de la faena de maquetacion pasa por nuevas etiquetas semanticas que veremos mas adelante, como <strong>HEADER, FOOTER,NAV, ARTICLE, ASIDE, FIGURE, o SECTION</strong>. </p>
-            <p>Dentro de <strong>SECTION</strong> (Puede ser por ejemplo seccion de noticias) se puede poner la etiqueta <strong>ARTICLE</strong> que sera el contenido en concreto(En la seccion de noticias, serian las noticias en si mismas), los <strong>ASIDE</strong> (fuera de <strong>SECTION</strong>) puede estar en cualquier parte de la pagina pero suele ser informacion adicional o extra, o externa, Tops, o cosas similares. En el <strong>FOOTER</strong>, suelen ser datos de contacto, no se recomienda ponerlo dentro de <strong>SECION</strong>.</p>
+            <p>Dentro de <strong>SECTION</strong> (Puede ser por ejemplo seccion de noticias) se puede poner la etiqueta <strong>ARTICLE</strong> que sera el contenido en concreto(En la seccion de noticias, serian las noticias en si mismas), los <strong>ASIDE</strong> (fuera de <strong>SECTION</strong>) puede estar en cualquier parte de la pagina pero suele ser informacion adicional o extra, o externa, Tops, o cosas similares. En el <strong>FOOTER</strong>, suelen ser datos de contacto, no se recomienda ponerlo dentro de <strong>SECTION</strong>.</p>
             <p>Etiqueta <strong>MAIN</strong>, es parecido al <strong>BODY</strong>, es la que tiene toda la informacion de la pagina, que no es lo mismo que todo el contenido visual de la web entera. Dentro de el, puede estar la parte central de la pagina <strong>SECTION</strong>, <strong>ARTICLE</strong>, <strong>ASIDE</strong>, pero no estaran ni <strong>HEADER</strong> ni <strong>FOOTER</strong>.</p>
             <ul>
                 <li>HEADER -> cabecera</li>
@@ -108,7 +107,7 @@
                 <li>FOOTER ->pie de pagina</li>
             </ul>
 <!-------- Apartado para las listas -->
-          <h3>Tipos de listas</h3>
+          <h3 id="L">Tipos de listas</h3>
             <p>Etiqueta <strong>UL</strong>, sirve para crear listas sin orden (Unordened List). Existen atributos o propiedades para cambiar la forma de listado, por defecto aparecen redondas, pero pueden ser estilizadas via CSS, y cambiar la forma por cuadrados, redondas huecas, etc... </p>
             <p>Etiqueta <strong>OL</strong>, sirve para crear listas (Ordened List). Existen atributos o propiedades para cambiar la numeracion, por numeros, letras, numeros romanos,etc... Se escriben junto al atributo/propiedad TYPE. El atributo/propiedad REVERSED indica que sigue numeracion de abajo a arriba.</p>
             <p>Dentro de OL y UL estan:</p>
@@ -190,7 +189,7 @@
                 <li>Para hacer columnas, colocaremos diveros elementos de bloque seguidos, modificandolos por CSS</li>
               </ul>
             </ul>
-          <h3> Tipos de rutas para vinculos:</h3>
+          <h3>Tipos de rutas para vinculos:</h3>
             <p><strong>Ruta relativa:</strong> Para las rutas de enlace a traves de HTML, tendremos que escribir el camino a seguir, ejemplo: Carpeta de imagen/imagen.jpg. Lo mismo con archivos CSS o JS </p>
             <p><strong>Ruta absoluta:</strong> Se tiene que escribir todo la direccion del archivo, ej: C:/Windows/Users/X/Desktop/Imagenes/y.jpg. Para rutas en un servidor se utiliza las dos barras, antes y despues de la carpeta /Imagenes/</p>
             <p> Para llegar a otras carpetas, se tiene que salir de la carpeta actual, entrar a la otra y buscar el archivo, para ello se escribe ../ para ordenar la salida de la carpeta. Ej: ../imagenes/imagen.jpg</p>
@@ -237,7 +236,7 @@
           <h2>Codificacion:</h2>
           <p>ASCII el primer codigo de todo., ANSI, e ISO-8859-1. Hoy en dia se trabaja con UTF-8. Las codificaciones tienen la mayoria de simbolos y demas, en caso de caracteres muy especiales, por ejemplos €, deberia escribirse "&euro_;" (sin barra baja). En HTML entities hay una lista de los posibles iconos donde encontramos el codigo para ponerlo. Suele tener al principio "&".</p>
 <!-------- Explicacion de tipografias-->
-          <h2>Tipografias:</h2>
+          <h2 id="TP">Tipografias:</h2>
           <p>Las serif, suelen ser la familias de tipografias mas predeterminadas. Serif sifnifica que la letra tiene "pie". Sans-serif es la letra sin el pie. El navegador usara la primera fuente de la lista especificada en "font-family" que tenga en el ordenador del usuario.</p>
           <p>Se pueden poner tipografias de otros tipos, siempre respetando la autoria.</p>
           <p>La etiqueta "font-face" sirve para incorporar tipografias. Hay diferentes formatos para incoporar tipografias: TTF/OTF, WOFF(W3C), WOFF, SVG,... En CSS se indica en font family: myFont, y luego especificar la url con src:url().</p>
@@ -277,14 +276,7 @@
         <div align="middle">
         <img width="200"  height="200"  src="https://cdna.artstation.com/p/assets/covers/images/012/434/284/20180820140626/small_square/mathew-maddison-courier-icon-01.jpg?1534791987">
         </div>
-      <h2>Links de interes</h2>
-        <ul>
-            <li><a target="_blank" href="https://www.w3.org/TR/html5/">W3C.org HTML5</a></li>
-            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools.com</a></li>
-            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">HTML Mozilla Developer</a></li>
-            <li><a href="https://validator.w3.org/" target="_blank">Validator W3C</a></li>
-            <li><a href="#" target="_blank">l5</a></li>
-            <li><a href="#" target="_blank">l6</a></li>
-        </ul>
+        <p>Fly safe, commander! o7</p>
+        <p><a href="#top">Arriba</a></p>
   </body>
  </html>
