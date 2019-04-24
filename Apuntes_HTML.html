@@ -138,7 +138,6 @@
 <!-------------- Mas maneras de dar formatos, y formas dentro de la tabla -->
                 <li>Etiquetas <strong>COLSPAN</strong>, indica los espacios en celdas que ocupara un elemento en horizontal, para que sea efectivo, se tienen que crear las celdas necesarias iguales al <strong>COLSPAN</strong></li>
                 <li>Etiqueta <strong>ROWSPAN</strong> indica los espacios en celdas que ocupara un elemento en vertical. Misma regla de <strong>COLSPAN</strong>. </li>
-          <h3>Comandos y teclas especiales:</h3>
 <!--------- Commandos emmet para Visual Studio Code-->
             <p>En comandos <span>EMMET</span> se puede usar el comando: <span>ol>li*x</span>. Esto hara crear una Ordened List, teniendo li dentro y x el numero de li's dentro. Con el caracter $, entre {} dan elementos numericos seguidos dentro la lista. Ej: <span>ol>li{$}*x</span> , se pueden realizar mas operaciones con emmet, mas info: <a href="https://emmet.io/">emmet.io</a>.</p>
 <!--------- Este caso es la TECLA, no la ETIQUETA -->
@@ -174,11 +173,11 @@
           </ul>
 <!-------Otras cosas de HTML, carpetas, recomendaciones, etc...-->
         <h2>Otras cosas de HTML</h2>
-          <p>La estructura de las carpetas es, para imagenes ( <span>IMG, IMAGES, IMATGES, IMAGEN</span> ), para estilos ( <span>CSS, ESTILOS, STYLES</span> ), para scripts o frameworks ( <span>SCRIPTS, JS</span> ), y para recursos externos ( <span>RECURSOS, RESOURCES</span>).</p>
-          <p> Para hacer saltos o crear un Indice en la propia pagina, se utiliza el atributo <strong>ID</strong>, que identificara para realizar enlaces en la misma pagina. Se utiliza con los hipervinculos, para saltar a un mismo punto del documento. ID es un identificador unico, no puede repetirse dos veces, el <span>CLASS</span> si puede. Se utiliza el elemento <strong>#</strong> para hacer referencia al ID que queremos ir. EJ: <span>&lt;a href="#x.html">X&lt;/a></span> rigira a esa parte de la pagina.</p>
-          <p>Se puede crear enlaces especiales como por ejemplo, a emails, para cuando queramos contactar aunque ya no se utiliza para evitar bots de spam y obliga al usuario a tener un gestor de mails instalado. <span class="red">ES RECOMENDABLE NO HACERLO</span>, pero saber que existe. Se le puede poner el atributo <span>SUBJECT</span> para poner en el asunto del Email automaticamente. ej: <span>"x@x.com?subject=Error"</span></p>
+          <p>La estructura de las carpetas es, para imagenes ( IMG, IMAGES, IMATGES, IMAGEN ), para estilos ( CSS, ESTILOS, STYLES ), para scripts o frameworks ( SCRIPTS, JS ), y para recursos externos ( RECURSOS, RESOURCES).</p>
+          <p> Para hacer saltos o crear un Indice en la propia pagina, se utiliza el atributo <strong>ID</strong>, que identificara para realizar enlaces en la misma pagina. Se utiliza con los hipervinculos, para saltar a un mismo punto del documento. ID es un identificador unico, no puede repetirse dos veces, el CLASS si puede. Se utiliza el elemento <strong>#</strong> para hacer referencia al ID que queremos ir. EJ: &lt;a href="#x.html">X&lt;/a>, cuando hagamos clic nos dirigira a esa parte de la pagina.</p>
+          <p>Se puede crear enlaces especiales como por ejemplo, a emails, para cuando queramos contactar aunque ya no se utiliza para evitar bots de spam y obliga al usuario a tener un gestor de mails instalado. ES RECOMENDABLE NO HACERLO, pero saber que existe. Se le puede poner el atributo SUBJECT para poner en el asunto del Email automaticamente. ej: "x@x.com?subject=Error"</p>
           <p>Se puede hacer enlaces a archivos para ejecutarlos, recomendado solo en intranets, es muy poco fiable y poco seguro en internet. Simplemente se añade la ruta relativa del .exe.</p>
-          <p>Intentemos evitar estas etiquetas <strong>ID</strong> y <strong>CLASS</strong>, dentro de lo posible para tener un CSS menos problematico. Cuanto menos se concrete y mas se pueda utilizar, o reutilizar etiquetas mas generales, mejor.</p>
+          <p>Intentemos evitar estas etiquetas <strong>ID</strong> y <strong>CLASS</strong>, dentro de lo posible para tener un CSS menos problematico.</p>
           <p>El microdata ayuda a dar informacion semantica en las estructuras</p>
           <p>La etiqueta <strong>TABLE</strong>, no se recomienda, es una texnica antigua, para ello es mejor los <strong>DIVS</strong>. Texnica dominante actualmente, mas versatil y potenten combinada con CSS, permite cambiar la distribucion de elementos, es mas amigable con los buscadores y navegadores aurales.</p>
           <ul>
@@ -191,9 +190,9 @@
               </ul>
             </ul>
           <h3>Tipos de rutas para vinculos:</h3>
-            <p><strong>Ruta relativa:</strong> Para las rutas de enlace a traves de HTML, tendremos que escribir el camino a seguir, ejemplo: Carpeta de imagen/imagen.jpg. Lo mismo con archivos CSS o JS.</p>
-            <p><strong>Ruta absoluta:</strong> Se tiene que escribir todo la direccion del archivo, ej: C:/Windows/Users/X/Desktop/Imagenes/y.jpg. Para rutas en un servidor se utiliza las dos barras, antes y despues de la carpeta /Imagenes/.</p>
-            <p> Para llegar a otras carpetas, se tiene que salir de la carpeta actual, entrar a la otra y buscar el archivo, para ello se escribe ../ para ordenar la salida de la carpeta. Ej: ../imagenes/imagen.jpg.</p>
+            <p><strong>Ruta relativa:</strong> Para las rutas de enlace a traves de HTML, tendremos que escribir el camino a seguir, ejemplo: Carpeta de imagen/imagen.jpg. Lo mismo con archivos CSS o JS </p>
+            <p><strong>Ruta absoluta:</strong> Se tiene que escribir todo la direccion del archivo, ej: C:/Windows/Users/X/Desktop/Imagenes/y.jpg. Para rutas en un servidor se utiliza las dos barras, antes y despues de la carpeta /Imagenes/</p>
+            <p> Para llegar a otras carpetas, se tiene que salir de la carpeta actual, entrar a la otra y buscar el archivo, para ello se escribe ../ para ordenar la salida de la carpeta. Ej: ../imagenes/imagen.jpg</p>
 <!------ Elementos multimedia, videos, imagenes, audio y demas-->
         <h2>Elementos Multimedia (COMPLETAR SECCION)</h2>
             <p>Los elementos multimedia son imagenes, graficos, dibujos, animaciones, videos, sonidos... Los navegadores soportan diversos formatos.</p>
@@ -204,37 +203,28 @@
               <li>Wav Todos menos IE.</li>
             </ul>
             <p>En video, antes de HTML5 no habia un estandar para mostrar peliculas o videos en paginas web. Solamente se podian reproducir videos mediante plugins como el Macromedia Flash, a mes de diferentes navegadores que utilizan diferentes plugins. Youtube entre ellos. </p>
-            <p>Etiqueta <strong>VIDEO</strong> acostumbra a trabajar en <span>MP4, OGG y WEBM</span>. Puedes decirle a traves de la etiqueta <span>SOURCE</span>, cual de los tres archivos, con diferente extension, reproduzca. Dependiendo del navegador, utilizara uno u otro. Si no puede, puedes hacer que aparezca un mensaje de que el navegador no soporta los archivos de video.</p>
-            <p> Tambien puedes hacer que salgan subtitulos con la etiqueta <span>TRACK</span>, con atributos <span>SRC</span> y <span>KIND</span> (fuente y tipos)</p>
+            <p>Etiqueta <strong>VIDEO</strong> acostumbra a trabajar en MP4, OGG y WEBM. Puedes decirle a traves de la etiqueta SOURCE, cual de los tres archivos, con diferente extension, reproduzca. Dependiendo del navegador, utilizara uno u otro. Si no puede, puedes hacer que aparezca un mensaje de que el navegador no soporta los archivos de video.</p>
+            <p> Tambien puedes hacer que salgan subtitulos con la etiqueta TRACK, con atributos SRC y KIND (fuente y tipos)</p>
             <h3> Atributos de Video</h3>
             <ul>
-              <li>Autoplay: especifica que el video comenzara a reproducir cuando este preparado.</li>
-              <li>Controls: Especifica que los controles de video se han de mostrar (boton de play, pausa, etc...).</li>
-              <li>height: Establece la altura del video.</li>
-              <li>loop: Especifica cuando empezara de nuevo el video.</li>
-              <li>width: Establece la anchura del video.</li>
+              <li>Autoplay: especifica que el video comenzara a reproducir cuando este preparado</li>
+              <li>Controls: Especifica que los controles de video se han de mostrar (boton de play, pausa, etc...)</li>
+              <li>height: Establece la altura del video</li>
+              <li>loop: Especifica cuando empezara de nuevo el video</li>
+              <li></li>
               <li></li>
               <li></li>
               <li></li>
               <li></li>
             </ul>
             <p>Etiqueta <strong>AUDIO</strong> es muy similar al funcionamiento a la de VIDEO, SOURCE para indicar los archivos, y el TYPE para marcar audio/extension.</p>
-            <p> Etiquetas <span>OBJECT</span>, define un objeto integrado a nuestra web, a mes soportado por los principales navegadores. Se usa para integrar plugins como applets de Java, ActiveX, PDF, o Flash, en paginas web.</p> 
-            <p>Etiqueta <strong>PARAM</strong> para parametros de la etiqueta.</p>
-            <p>Atributos de audio:</p> 
-            <ul>
-              <li>Data:</li>
-              <li>Form:</li>
-              <li>Height:</li>
-              <li>Name:</li>
-            </ul>
+            <p> Etiquetas OBJECT, define un objeto integrado a nuestra web, a mes soportado por los principales navegadores. Se usa para integrar plugins como applets de Java, ActiveX, PDF, o Flash, en paginas web. Etiqueta PARAM para parametros de la etiqueta.</p>
+            <p>Atributos: DATA; FORM; HEIGHT;NAME;</p>
             <p>Etiqueta EMBED, funciona igual que object, pero no es aceptado por validadores de HTML4. </p>
-          <h3>Programas multimedia:</h3>
-            <p>Tenemos varios programas para utilizar en multimedia. Por ejemplo:</p>
-            <p>Programas gratuitos:</p>
+            <p>Tenemos varios programas para utilizar para multimedia. Por ejemplo:</p>
             <ul>
-              <li>Audio: Audacity, Musical Sketch Pad, Sound Editor, Recording Studio, Nero WaveEditor, ESPStudio Audio Editor, etc... </li>
-              <li>Video: Shotcut, HitFilm, Blender, BlackMagic DVR15Beta, Lightworks, VSDC Free Video Editor, Avidemux, etc... </li>
+              <li>Audio: Audacity</li>
+              <li>Video: Shotcut</li>
             </ul>
 <!------ iframes-->
         <h2>iFrames:</h2>
@@ -249,8 +239,8 @@
           <h2 id="TP">Tipografias:</h2>
           <p>Las serif, suelen ser la familias de tipografias mas predeterminadas. Serif sifnifica que la letra tiene "pie". Sans-serif es la letra sin el pie. El navegador usara la primera fuente de la lista especificada en "font-family" que tenga en el ordenador del usuario.</p>
           <p>Se pueden poner tipografias de otros tipos, siempre respetando la autoria.</p>
-          <p><strong>Font-face</strong> sirve para incorporar tipografias. Hay diferentes formatos para incoporar tipografias: TTF/OTF, WOFF(W3C), WOFF, SVG,... En CSS se indica en font family: myFont, y luego especificar la url con src:url().</p>
-          <p><strong>font-size</strong> hay diferentes formas de definir la medida. Absoluta: xx-small, small, medium, large.... Relativa: larger, smaller,... o por medida: pixeles, pulgadas, o porcentaje que se adaptara siempre.</p>
+          <p><strong>Font-face</strong>: sirve para incorporar tipografias. Hay diferentes formatos para incoporar tipografias: TTF/OTF, WOFF(W3C), WOFF2, SVG, y EOT. En CSS se indica en font family: myFont, y luego especificar la url con src:url().</p>
+          <p><strong>Font-size</strong> hay diferentes formas de definir la medida. Absoluta: xx-small, small, medium, large.... Relativa: larger, smaller,... o por medida: pixeles, pulgadas, o porcentaje que se adaptara siempre.</p>
           <p>Como consejo es mejor definir el elemento raix con una medida en px, y luego el resto de unidades relativas con rem, o em.</p>
           <p><strong>Font-style</strong>, estan los valores normal, italic o obliqua(forzar la cursiva). </p>
           <p><strong>Font-weight</strong> podemos definir el grueso de la fuente, desde 100 a 900, siendo 400 la normal, 700 bold. Bolder mas negrita, lighter menos negrita.</p>
@@ -272,10 +262,80 @@
           <p><strong>Vertical-align</strong>: Permite alinear en una misma linea, varios elementos del tipo inline, imagenes o textos por ejemplo. No se utiliza para centrar verticalmente un elemento dentro de un contenedor block.</p>
           <p>Para centrar con div, hay que entrar en utilizacion de diferentes elementos para alinear dentro de elementos en bloque. Line-height u overflow por ejemplo.</p>
           <p><strong>Border</strong>, se utiliza para resaltar los bordes de un contenedor, se utiliza sobre elementos de bloque como div, o table. Se puede modificar todo, desde color, grueso, tipo, bordes, etc... se utiliza el border-style para concretar los tipos que queramos utilizar. Para redondear las puntas se utiliza border-radius y con unidades de medida.</p>
+<!--------Formularios-->
+        <h2>Formularios</h2>
+          <p>Principal objetivo, recuperar datos del cliente y enviarlos al servidor con el mismo permiso del usuario. Pueden ser herramientas muy importantes para los servidores o para hacer reaccionar la web o aplicacion segun lo que se ponga en los datos. Ve dentro del body en HTML.</p>
+          <p><strong>INPUT</strong>, elemento para introducir datos. Pueden haver diferentes tipos: text, number, password, checkbox, radiobutton, submit, reset,...etc. Si queremos enviar datos, debemos usar el atributo name="x" y la aplicacion recibira x="valor". Debe especificarse un ID para vincularlo al label</p>
+            <p>Ej:<input></p>
+          <p><strong>FORM</strong> , etiqueta que marca el inicio y el final del formulario, dentro de esta iran todos los elementos del formulario. Botones, campos de datos, selectores...</p>
           <p><strong></strong></p>
-          <p><strong></strong></p>
-          <p><strong></strong></p>
-          <p><strong></strong></p>
+          <p><strong>LABEL</strong>, etiqueta que acompaña al campo de formulario. Por temas de accesibilidad y usabilidad, puede venir acompañado por el atributo "for", el navegador puede trabajar mejor los datos. Si clicamos con el raton sobre el elabel, se toma el control. Este atributo indica a que elemento corresponde cada una de las etiquetas del formulario.</p>
+
+          <h3>Atributos de Form</h3>
+            <p><strong>Name</strong>: Especifica el nombre.</p>
+            <p><strong>Method</strong>: El metodo de envio de datos</p>
+              <ul>
+                <li><strong>Get</strong>: para enviar una cantidad limitada de datos de forma publica(URL). En la URL se envian como parejas clave-valor. El punto donde parten las variables es el "?" es donde empiezan las variables, y los finales de la variable son "=". Muy util para pasar valores entre paginas. No es seguro para datos sensibles como contraseñas. El navegador limita el numero maximo de datos enviados.</li>
+                <li><strong>Post</strong>: Envia una cantidad ilimitada de datos de forma privada. los datos se envian con el documento. Se puede usar para subir archivos.</li>
+              </ul>
+            <p><strong>Action</strong>: Declara la URL  donde se envian los datos, via correo electronico (no recomendable) por los robots de spam. A un programa en el servidor y/o para subir archivos a un servidor.</p> 
+            <p><strong>Target</strong>: Donde mostrara el mensaje de respuesta del servidor, por defecto <strong>_self, _blank, _top  _ parent</strong>.</p> 
+            <p><strong>Enctype</strong>: Codificacion aplicada a los datos enviados, Caracteres codificados:</p>
+            <ul>
+              <li>Application/x-www-form-urlencoded*: Es el  valor por defecto, subtituye los espacios en blanco por caracteres.</il>
+              <li>multipart/form-data: caracteres no codificados.</li>  
+              <li>Text/plain: Los sespacio en blanco son codificados.</li>  
+            </ul>
+            <p><strong>Acept-charset</strong>: Declara el tipo de codificacion del texto del formulario. Por defecto tiene la misma codificacion aplicada en el &lt;meta></p>
+<!---------Atributos de label-->
+          <h3>Atributos de Label</h3>
+            <p><strong>For</strong>, es para indicar a que id funcionara</p>
+<!---------Atributos de input-->
+          <h3>Atributos de Input</h3>
+            <p><strong>Name</strong>, sirve para darle un nombre a la variable. Para identificarlo con la variable, cambiara.</p>
+            <p><strong>Type</strong>, sirve para especificar el tipo de input que sera.</p>
+            <ul>
+              <li>Number, para seleccionar un numero. Sirve para edades por ejemplo.</li>
+              <p>Ej: <input type="number" min="1" max="90"></p>
+              <li>Text, para poner texto plano. Para nombres o palabras.</li>
+              <p>Ej: <input type="text" maxlength="10"></p>
+              <li>Radio, para poner un seleccionador en formato redondo. Sirve para eleccionnes cerradas, ejemplo mujer o hombre, alto o pequeño. Solo se debe hacer para seleccionar una sola opcion. Si cambias la variable "name", entendera que son diferentes familias, dando por error, la posible seleccion de todas las opciones. </li>
+              <p>Ej:<input type="radio"></p>
+              <li>Reset, sirve para resetear formularios o partes de ellos.</li>
+              <li>Color, para poner color.</li>
+              <li>Image; Nos pone una imagen en vez del boton, pero con la misma funcion. Se utiliza con src. </li>
+              <li>Date, Time, Week, Month, Year: Para poder especificar las fechas, horas, semanas o años. El caracter ":" en la URL se representa en "%3". "datetime-local" Para configurar la fecha actual de donde este la ip.</li>
+            </ul>
+            <p><strong>Submit</strong>, el navegador lo interpreta como un boton.</p>
+            <p>Ej:<input type="submit"></p>
+            <p><strong>Placeholder</strong>, sirve para darle un nombre al interior del input.</p>
+            <p><strong>Disabled</strong>: Especifica si el elemento debe estar activado o desactivado.</p>
+            <p><strong>Max</strong>: el valor maximo para un campo de entrar, valores numericos sobretodo, del 1 al 31. </p>
+            <p> <strong>Maxlength</strong>: El numero maximo de caracteres para un campo de entrada</p>
+            <p><strong>Min</strong>: el valor minimo para un campo de entrada.</p>
+            <p>Value: Valor en si mismo, ya dado o facilitado por algun medio por el usuario.</p>
+            <p>Low: Nivel considerado bajo.</p>
+            <p>High: Nivel considerado alto.</p>
+            <p>Optimum: Nivel optimo.</p>
+            <p><strong>Pattern</strong>: Expresion regular para comprobar el valor de entrada.</p>
+          <h3>Tipos de filtrajes:</h3>
+            <p><strong>Readonly</strong>:</p>
+            <p><strong>Required</strong>: Obliga a rellenar el espacio en blanco.</p>
+            <p><strong>Range</strong>: Sirve para marcar un rango, manual, minimo o maximo.</p>
+            <p><strong>cheked</strong></p>
+            <p><strong>Email</strong>: Sirve para poner emails, espera que haya "@" y estructura de email.</p>
+            <p><strong>URL</strong>: Se utiliza para poner url, espera que haya la misma estructura.</p>
+            <p><strong>Tel</strong>: Sirve para telefonos.</p>
+            <p><strong>Textarea</strong>: Crea campos de entrada para multiples lineas. El tamaño se puede declarar con "row" cols, o en pixels en css.</p>
+            <p><strong>Select</strong>: Crea una lista de opciones para elegir. Trabaja junto a option y optgroup.
+            meterRepresenta una medida dentro de un rango.</p>
+            <p><strong>Button</strong> crea un boton que puede ser del tipo reset, submit o button.</p>
+            <p><strong>Datalist</strong>: crea un listado de valores para otros controles.</p>
+            <p><strong>Fieldset</strong>: crea agrupaciones de datos, trabajajunto a "legend"</p>
+          <h3>Otros</h3>
+            <p> Meter: representa una medicion. Funciona con los atributos: low, high, optimum, value, min y max.</p>
+            <p>Button: Sirve para poner un boton para algo que queramos, por ejemplo, reset.</p>
+            <p>Progress: Es una barra que nos indica el progreso de algun proceso o algo que hagamos. Se debe configurar con value, y max.</p>
 <!-------Ejemplos Imagenes y links-->
         <h2> Ejemplos varios de enlaces e imagenes:</h2>
 <!-------- Test de enlace a otra pagina, le aplicaremos CSS HOVER para cambiar el link con el mouse encima -->
